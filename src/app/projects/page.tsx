@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 
@@ -70,14 +71,15 @@ const ProjectCard = ({ projects }: { projects: any }) => {
 
 export default function Projects() {
   return (
-    <div>
+    <div className="prose prose-invert max-w-none">
       <Navbar />
-      <h1 className="text-center my-8">My Projects</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <h3 className="text-center my-8">My Projects</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 not-prose">
         {projects.map((project, index) => (
           <ProjectCard key={index} projects={project} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
