@@ -1,15 +1,10 @@
-import Image from "next/image";
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <main className="prose prose-invert max-w-none">
-      <div className="m-8 not-prose">
-        <ul className="text-white flex gap-8 items-start justify-center">
-          <li>Home</li>
-          <li>Projects</li>
-          <li>Resume</li>
-        </ul>
-      </div>
+      <Navbar />
       <h1 className="text-3xl text-white my-10">
         Jerry Yan Krismanto - Web Developer, Informatics Engineering Student,
         and a digital aficionado{" "}
@@ -134,6 +129,7 @@ export default function Home() {
             </tbody>
           </table>
         </div>
+        <Footer />
       </div>
     </main>
   );
