@@ -17,6 +17,20 @@ const projects = [
     link: "https://final-project-ruangguru-class7.web.app/",
     image: "/assets/images/student-portal.jpg",
   },
+  {
+    name: "beliternak.com",
+    description:
+      "A website for a livestock company, built with Vue.js, styled with tailwindcss adn bootstrap. Part of my internship project at PT. Stechoq Robotika Indonesia.",
+    link: "https://beliternak.com/",
+    image: "/assets/images/beliternak.png",
+  },
+  {
+    name: "Kostmate",
+    description:
+      "A payment system for boarding houses, built with vue.js, midtrans as payment gateway, and firebase as database, deployed on Vercel!",
+    link: "https://kost-payment.vercel.app/",
+    image: "/assets/images/kostmate.png",
+  },
 ];
 
 const ProjectCard = ({ projects }: { projects: any }) => {

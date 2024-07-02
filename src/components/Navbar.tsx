@@ -11,6 +11,9 @@ function Navbar() {
         <li>
           <a href="/resume">Resume</a>
         </li>
+        <li>
+          <a href="/blog">Blog</a>
+        </li>
       </ul>
     </nav>
   );
