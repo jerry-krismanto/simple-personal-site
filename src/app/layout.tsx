@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Jerry Yan Krismanto",
-  description: "My Personal Webiste, Welcome!",
+  description: "My Personal Website, Welcome!",
 };
 
 export default function RootLayout({
@@ -16,12 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={
-          inter.className + " bg-neutral-900 mx-8 lg:mx-96 text-white"
-        }>
-        {children}
-      </body>
+      <body className={inter.className + " bg-neutral-900"}>{children}</body>
     </html>
   );
 }
